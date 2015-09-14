@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Spicy Dice</title>
+
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <link rel="stylesheet" href="css/messi.min.css" />
+</head>
+<body>
+
+<h1><u>Spicy Dice</u></h1>
+
+<div class="dice">
+    <img onclick="handleSelect(this)" class="diceimg" id = "die1" src="img/dice1.png" height="100px" width="100px">
+    <img onclick="handleSelect(this)" class="diceimg" id = "die2" src="img/dice2.png" height="100px" width="100px">
+    <img onclick="handleSelect(this)" class="diceimg" id = "die3" src="img/dice3.png" height="100px" width="100px">
+    <img onclick="handleSelect(this)" class="diceimg" id = "die4" src="img/dice4.png" height="100px" width="100px">
+    <img onclick="handleSelect(this)" class="diceimg" id = "die5" src="img/dice5.png" height="100px" width="100px">
+    <img onclick="handleSelect(this)" class="diceimg" id = "die6" src="img/dice6.png" height="100px" width="100px">
+</div>
+
+<div id="scoresDiv" class="scores">
+    <div><h3><u>Scores</u></h3>
+        <div><p class="playerLabel">Player 1: <input id="player1score" type="text" maxlength="7" size="7" /></p></div>
+        <div><p class="playerLabel">Player 2: <input id="player2score" type="text" maxlength="7" size="7" /></p></div>
+    </div>
+    <div class="buttons">
+        <input type="button" id="howto" value="How To Play"/>
+        <input type="button" id="roll" value="ROLL"/>
+        <input type="button" id="pass" value="PASS"/>
+        <input type="button" id="scoreDice" value="SCORE DICE"/>
+
+    </div>
+</div>
+<div id="pointsDiv">
+    <div class="divRow">
+        <h3><u>Points:</u></h3>
+    </div>
+
+    <div class="divRow">
+        <div id="leftCol">
+            <p class="pointsLayout">A dice with roll of 1</p>
+            <p class="pointsLayout">A dice with roll of 5</p>
+            <p class="pointsLayout">Three of a kind of 1s</p>
+            <p class="pointsLayout">Three of a kind of 2s, 3s, 4s, 5s, 6s</p>
+            <p class="pointsLayout">Straight of all 6 die</p>
+            <p class="pointsLayout">Four of a kind</p>
+            <p class="pointsLayout">Five of a kind</p>
+            <p class="pointsLayout">Six of a kind</p>
+
+        </div>
+
+        <div id="rightCol">
+            <p class="pointsValueLayout">100</p>
+            <p class="pointsValueLayout">50</p>
+            <p class="pointsValueLayout">700</p>
+            <p class="pointsValueLayout">100x Die Value</p>
+            <p class="pointsValueLayout">1,500</p>
+            <p class="pointsValueLayout">1,000</p>
+            <p class="pointsValueLayout">2,000</p>
+            <p class="pointsValueLayout">3,000</p>
+
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/messi.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/scoreLogic.js"></script>
+
+</body>
+</html>

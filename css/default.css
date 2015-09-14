@@ -1,0 +1,118 @@
+body{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: sans-serif;
+    line-height: 20px;
+    background: beige;
+}
+
+h1{
+    font-size: 80px;
+    color: darkred;
+    text-shadow: 1px, 1px, 1px;
+    font-family: 'MyWebFont', Arial;
+    text-align: center;
+}
+
+h3{
+    font-size: 40px;
+    font-family: 'MyWebFont', Arial;
+}
+
+div.dice{
+    text-align: center;
+}
+
+#pointsDiv {
+    display: table;
+    float: right;
+    padding-right: 20px
+}
+#scoresDiv {
+    float: left;
+    overflow: hidden
+}
+
+.divRow {
+    display: table-row;
+}
+
+#leftCol, #rightCol {
+    display: table-cell;
+}
+
+div.scores{
+
+}
+
+div.buttons{
+    margin-top: 40px;
+}
+
+p.playerLabel{
+    text-shadow:.5px .5px .5px #666;
+
+}
+
+img.diceanimation{
+    height: 100px;
+    width: 100px;
+    -webkit-animation-name: rolldice;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes rolldice{
+    0% {background-image: url(../img/dice1.png);}
+    20% {background-image: url(../img/dice2.png);}
+    40% {background-image: url(../img/dice3.png);}
+    60% {background-image: url(../img/dice4.png);}
+    80% {background-image: url(../img/dice5.png);}
+    100% {background-image: url(../img/dice6.png);}
+}
+
+
+img.diceimg{
+    float: inherit;
+    text-align: center;
+    border: 3px;
+    border-color: lightblue;
+    border-style: groove;
+    padding: 2px;
+}
+
+img.diceSelected{
+    float: inherit;
+    text-align: center;
+    border: 3px;
+    border-color: orangered;
+    border-style: groove;
+    padding: 2px;
+}
+
+img.diceNoDisplay{
+    display: none;
+}
+
+button{
+    background: darkorange;
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url(fonts/black_jack-webfont.woff),
+    url(fonts/black_jack-webfont.svg);
+}
+
+.pointsLayout {
+    margin-bottom: 1px;
+    margin-top: 0px;
+}
+
+.pointsValueLayout{
+    text-align: right;
+    margin-bottom: 1px;
+    margin-top: 0px;
+    margin-left: 40px;
+}
